@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-html, 
+html,
 body,
 .js .container,
 .js .dragslider,
@@ -56,7 +56,7 @@ html.js,
 	cursor: pointer;
 	top: -160%;
 	left: 40%;
-	width: 250px;
+	width: 165px;
 }
 
 .no-js .dragslider h2 {
@@ -66,7 +66,7 @@ html.js,
 .dragslider h2 span {
 	display: block;
 	font-size: 40%;
-	font-family: "jaf-bernino-sans-condensed",sans-serif;	
+	font-family: "jaf-bernino-sans-condensed",sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 0.2em;
@@ -155,7 +155,7 @@ button.slider-switch:hover {
 	background: #f3723f;
 	font-size: 16px;
 	white-space: normal;
-	cursor: -webkit-grab; 
+	cursor: -webkit-grab;
 	cursor: -moz-grab;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -173,7 +173,7 @@ button.slider-switch:hover {
 }
 
 .img-dragger .slide:active {
-	cursor: -webkit-grabbing; 
+	cursor: -webkit-grabbing;
 	cursor: -moz-grabbing;
 }
 
@@ -187,8 +187,8 @@ button.slider-switch:hover {
 .img-wrap img {
 	position: absolute;
 	display: block;
-	height: calc(100% + 0.0px);	
-	/* 	opacity: 0.5;*/	
+	height: calc(100% + 0.0px);
+	/* 	opacity: 0.5;*/
 }
 
 @media screen and (min-aspect-ratio: 1280/850) {
@@ -378,7 +378,7 @@ button.content-switch::before {
 	text-align: left;
 	font-family: "jaf-bernino-sans-condensed",sans-serif;
 	font-style: normal;
-	font-weight: 300;	
+	font-weight: 300;
 }
 
 .pages .content p:last-child {
@@ -386,7 +386,7 @@ button.content-switch::before {
 	text-align: center;
 	font-family: "jaf-bernino-sans-condensed",sans-serif;
 	font-weight: bold;
-	letter-spacing: 0.1em;	
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
 
