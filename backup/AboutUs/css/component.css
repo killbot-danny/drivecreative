@@ -21,6 +21,7 @@
 	overflow: hidden;
 	margin: 5px;
 	background: #333;
+	font-size: .7em;
 }
 
 .grid figure img {
@@ -40,9 +41,10 @@
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	font-size: .7em;
 }
 
-.grid figcaption h2 {
+.grid figcaption h3 {
 	margin: 0 0 20px 0;
 	color: #45484b;
 	font-family: "halogen",sans-serif;
@@ -58,13 +60,13 @@
 	padding: 0 20px;
 	color: #aaa;
 	font-weight: 300;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 	font-family: "jaf-bernino-sans-condensed",sans-serif;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
 }
 
-.grid figcaption h2,
+.grid figcaption h3,
 .grid figcaption p {
 	-webkit-transform: translateY(50px);
 	transform: translateY(50px);
@@ -82,7 +84,7 @@
 }
 
 .grid figcaption,
-.grid figcaption h2,
+.grid figcaption h3,
 .grid figcaption p,
 .grid figure button {
 	-webkit-backface-visibility: hidden;
@@ -107,7 +109,7 @@
 	opacity: 1;
 }
 
-.grid a:hover figcaption h2,
+.grid a:hover figcaption h3,
 .grid a:hover figcaption p {
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
@@ -145,7 +147,7 @@
 	background: #e74c3c;
 }
 
-.demo-2 .grid figcaption h2 {
+.demo-2 .grid figcaption h3 {
 	color: #e74c3c;
 }
 
@@ -173,9 +175,9 @@
 	transform: translateY(0);
 }
 
-.demo-2 .grid figcaption h2, 
+.demo-2 .grid figcaption h3,
 .demo-2 .grid figcaption p,
-.demo-3 .grid figcaption h2,
+.demo-3 .grid figcaption h3,
 .demo-3 .grid figcaption p {
 	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); /* older webkit */
 	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
@@ -194,11 +196,11 @@
 	background: #52be7f;
 }
 
-.demo-3 .grid figcaption h2 {
+.demo-3 .grid figcaption h3 {
 	color: #52be7f;
 }
 
-.demo-3 .grid a:hover figcaption h2 {
+.demo-3 .grid a:hover figcaption h3 {
 	-webkit-transform: translateY(5px);
 	transform: translateY(5px);
 }
@@ -238,7 +240,7 @@
 	}
 
 
-	.grid figcaption h2 {
+	.grid figcaption h3 {
 		margin-bottom: 0px;
 		-webkit-transform: translateY(30px);
 		transform: translateY(30px);
