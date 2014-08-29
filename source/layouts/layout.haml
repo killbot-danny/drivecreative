@@ -1,0 +1,97 @@
+!!! 5
+%html.no-js{lang: 'en'}
+  %head
+    %title Drive Ceative Agency | Portland, Oregon
+
+    %meta{charset: 'utf-8'}
+    %meta{:'http-equiv' => 'X-UA-Compatible', content: 'IE=edge'}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
+    %meta{name: 'keywords', content: 'Marketing and Branding Design Agency, Responsive Design, PDX Design Agency, Portland Oregon Design Agency, Branding Agency'}
+    %meta{name: 'description', content: 'Full Service Integrated Advertising Agency. We specialize in branding, print design, web design, interactive design, project management, Including custom video production'}
+    %meta{name: 'author', content: 'Drive Ceative Agency' }
+
+    %link{rel: 'canonical', href: 'http://drivecreative.agency/'}
+    %link{rel: 'shortcut icon', href: 'favicon.ico'}
+
+    / Lots of fonts loaded .... hopefully don't need them?
+    %link{href: 'http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700', rel: 'stylsheet', type: 'text/css'}
+
+    = stylesheet_link_tag 'all'
+
+    / Modernizr, always load in header.
+    %script{ type: 'text/javascript', src: 'javascripts/modernizr.custom.js'}
+
+    / More font loading .... nooooot good.
+    %script{ type: 'text/javascript', src: '//use.typekit.net/syb2akf.js'}
+    :javascript
+      try{Typekit.load();}catch(e){}
+
+    :plain
+      <!--
+
+           (
+           )\ )                          (                       )                    (
+          (()/(   (   (    )      (      )\   (      (     )  ( /( (    )      (      )\    (  (     (             (
+           /(_))  )(  )\  /((    ))\   (((_)  )(    ))\ ( /(  )\()))\  /((    ))\  ((((_)(  )\))(   ))\  (      (  )\ )
+          (_))_  (()\((_)(_))\  /((_)  )\___ (()\  /((_))(_))(_))/((_)(_))\  /((_)  )\ _ )\((_))\  /((_) )\ )   )\(()/(
+           |   \  ((_)(_)_)((_)(_))   ((/ __| ((_)(_)) ((_)_ | |_  (_)_)((_)(_))    (_)_\(_)(()(_)(_))  _(_/(  ((_))(_))
+           | |) || '_|| |\ V / / -_)   | (__ | '_|/ -_)/ _` ||  _| | |\ V / / -_)    / _ \ / _` | / -_)| ' \))/ _|| || |
+           |___/ |_|  |_| \_/  \___|    \___||_|  \___|\__,_| \__| |_| \_/  \___|   /_/ \_\\__, | \___||_||_| \__| \_, |
+                                                                                           |___/                   |__/
+      -->
+
+  %body{ class: page_classes }
+    .container
+      = yield
+
+    / Loading JS AFTER content
+    = javascript_include_tag 'all'
+
+    / Inline JS, should probably be moved to its own file.
+    :javascript
+      (function() {
+
+        var overlay = document.getElementById( 'overlay' ),
+          overlayClose = overlay.querySelector( 'button' ),
+          header = document.getElementById( 'header' )
+          switchBtnn = header.querySelector( 'button.slider-switch' ),
+          toggleBtnn = function() {
+            if( slideshow.isFullscreen ) {
+              classie.add( switchBtnn, 'view-maxi' );
+            }
+            else {
+              classie.remove( switchBtnn, 'view-maxi' );
+            }
+          },
+          toggleCtrls = function() {
+            if( !slideshow.isContent ) {
+              classie.add( header, 'hide' );
+            }
+          },
+          toggleCompleteCtrls = function() {
+            if( !slideshow.isContent ) {
+              classie.remove( header, 'hide' );
+            }
+          },
+          slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), {
+            // toggle between fullscreen and minimized slideshow
+            onToggle : toggleBtnn,
+            // toggle the main image and the content view
+            onToggleContent : toggleCtrls,
+            // toggle the main image and the content view (triggered after the animation ends)
+            onToggleContentComplete : toggleCompleteCtrls
+          }),
+          toggleSlideshow = function() {
+            slideshow.toggle();
+            toggleBtnn();
+          },
+          closeOverlay = function() {
+            classie.add( overlay, 'hide' );
+          };
+
+        // toggle between fullscreen and small slideshow
+        switchBtnn.addEventListener( 'click', toggleSlideshow );
+        // close overlay
+        overlayClose.addEventListener( 'click', closeOverlay );
+
+      }());

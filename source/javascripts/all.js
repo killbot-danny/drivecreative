@@ -1,1 +1,3 @@
-//= require_tree .
+//= require dragdealer
+//= require classie
+//= require dragslideshow
