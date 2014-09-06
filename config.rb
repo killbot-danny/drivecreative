@@ -41,11 +41,25 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def person(options)
+    haml_tag :a, :'data-path-hover' => 'm 180,34.57627 -180,0 L 0,0 180,0 z' do
+      haml_tag :figure do
+        haml_tag :img, src: options[:image]
+        haml_tag :svg, viewBox: '0 0 180 320', preserveAspectRatio: 'none' do
+          haml_tag :path, d: 'M 180,160 0,218 0,0 180,0 z'
+        end
+        haml_tag :figcaption do
+          haml_tag :h3, options[:name]
+          haml_tag :h4, options[:position]
+          haml_tag :span, class: 'button' do
+            haml_concat 'Email'
+          end
+        end
+      end
+    end
+  end
+end
 
 set :css_dir, 'stylesheets'
 
