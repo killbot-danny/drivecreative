@@ -104,7 +104,7 @@ section.portfolio {
         text-align: left;
         line-height: 1.5;
         font-weight: normal;
-        margin: 0;
+        margin: 0 0 .75em;
         padding: 0;
         text-transform: none;
         letter-spacing: 1px;
@@ -113,6 +113,8 @@ section.portfolio {
     .segment {
       overflow: hidden;
       margin: 1em auto;
+      border-bottom: 2px solid #f1f1ec;
+      padding-bottom: 2.5em;
       h6 {
         font-size: .7em;
         font-family: 'halogen', sans-serif;
@@ -135,17 +137,52 @@ section.portfolio {
         text-transform: none;
         letter-spacing: 1px;
       }
+      ul.color-blocks {
+        display: block;
+        margin: 1em 0 0;
+        padding: .8em 0 0;
+        border-top: 2px solid #f1f1ec;
+        li {
+          display: block;
+          float: left;
+          height: 75px;
+          width: 75px;
+          margin-right: .8em;
+          &.dark-blue {
+            background-color: #1a264d;
+          }
+          &.orange {
+            background-color: #d56341;
+          }
+          &.yellow {
+            background-color: #dde56b;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
       .left {
         float: left;
       }
       .right {
         float: right;
+        h6 {
+          text-align: right;
+        }
+        p {
+          text-align: right;
+        }
       }
       .branding {
         width: 11em;
       }
       .branding-logo {
         margin-top: 1.3em;
+      }
+      .website-photography {
+        margin-top: .75em;
+        width: 10em;
       }
     }
   }
