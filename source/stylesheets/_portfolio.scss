@@ -256,8 +256,45 @@ section.portfolio {
         width: 10em;
         margin-top: 1em;
       }
+      .campaign-theme {
+        width: 10em;
+      }
+      .campaign-image {
+        width: 29em;
+        margin-top: .8em;
+        img {
+          width: 100%
+        }
+      }
+      .direct-mail-images {
+        padding-bottom: 2em;
+        ul {
+          display: block;
+          margin: .35em 0 0;
+          padding: 0;
+          li {
+            display: block;
+            float: left;
+            &:first-of-type {
+              margin-right: 1em;
+            }
+            h6 {
+              border-bottom: 0;
+            }
+            img {
+              box-shadow: 0 0 .5em 0 rgba(0,0,0,.4);
+            }
+          }
+        }
+      }
+      .direct-mail {
+        width: 10em;
+      }
     }
     &.nerd-deck {
+      margin-top: 2em;
+    }
+    &.navex-global {
       margin-top: 2em;
     }
   }
