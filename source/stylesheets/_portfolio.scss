@@ -310,6 +310,14 @@ section.portfolio {
       .lights-camera-speedo {
         width: 12em;
       }
+      .show-time-image {
+        img {
+          margin: 1.6em 0 0 1.9em;
+        }
+      }
+      .show-time {
+        width: 11em;
+      }
     }
     &.nerd-deck {
       margin-top: 2em;
@@ -319,6 +327,10 @@ section.portfolio {
     }
     &.montage {
       margin-top: 2em;
+    }
+    &.stalk-us {
+      margin-top: 3em;
+      margin-bottom: 3em;
     }
   }
   .sample-dark-wrapper {
