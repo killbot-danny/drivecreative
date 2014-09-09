@@ -114,7 +114,6 @@ section.portfolio {
       overflow: hidden;
       margin: 1em auto;
       border-bottom: 2px solid #f1f1ec;
-      padding-bottom: 2.5em;
       h6 {
         font-size: .7em;
         font-family: 'halogen', sans-serif;
@@ -128,11 +127,11 @@ section.portfolio {
       }
       p {
         color: #4a4a4a;
-        font-size: .65em;
+        font-size: .6em;
         text-align: left;
         line-height: 1.5;
         font-weight: normal;
-        margin: 0;
+        margin: 0 0 1em;
         padding: 0;
         text-transform: none;
         letter-spacing: 1px;
@@ -176,6 +175,7 @@ section.portfolio {
       }
       .branding {
         width: 11em;
+        margin-bottom: 2.5em;
       }
       .branding-logo {
         margin-top: 1.3em;
@@ -183,6 +183,46 @@ section.portfolio {
       .website-photography {
         margin-top: .75em;
         width: 10em;
+      }
+      .video {
+        width: 12em;
+      }
+      .vision-plastics-video {
+        margin-top: 1em;
+        iframe {
+          box-shadow: 0 0 .5em 0 rgba(0,0,0,.4);
+        }
+        ul {
+          display: block;
+          overflow: hidden;
+          text-align: left;
+          margin: 1em 0;
+          padding: 0;
+          li {
+            float: left;
+            display: block;
+            margin-right: .3em;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .business-card {
+        margin: 1em 0 0 3em;
+        h6 {
+          margin-bottom: .85em;
+          border-bottom: 0;
+        }
+        img {
+          box-shadow: 0 0 .5em 0 rgba(0,0,0,.4);
+          &:first-of-type {
+            margin-right: 1em;
+          }
+        }
+      }
+      .collateral {
+        width: 10.25em;
       }
     }
   }
