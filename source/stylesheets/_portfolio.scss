@@ -362,4 +362,56 @@ section.portfolio {
       }
     }
   }
+  .portfolio-social {
+    line-height: 7;
+    h6 {
+      font-family: 'Halogen', sans-serif;
+      font-size: .85em;
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 0 2em 0 0;
+      padding: 0;
+      vertical-align: middle;
+      font-weight: lighter;
+      letter-spacing: 1px;
+    }
+    ul {
+      display: inline-block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      vertical-align: middle;
+      li {
+        float: left;
+        display: block;
+        margin-right: 1em;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        a {
+          display: block;
+          float: left;
+          overflow: hidden;
+          text-indent: 100%;
+          white-space: nowrap;
+          width: 60px;
+          height: 58px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          &.veer {
+            background-image: image-url('veer-btn.png');
+          }
+          &.facebook {
+            background-image: image-url('facebook-btn.png');
+          }
+          &.twitter {
+            background-image: image-url('twitter-btn.png');
+          }
+          &.linkedin {
+            background-image: image-url('linkedin-btn.png');
+          }
+        }
+      }
+    }
+  }
 }
