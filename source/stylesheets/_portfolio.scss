@@ -199,8 +199,12 @@ section.portfolio {
       }
       .video {
         width: 12em;
+        &.nerd-deck {
+          margin-top: .5em;
+          width: 11em;
+        }
       }
-      .vision-plastics-video {
+      .video-player {
         margin-top: 1em;
         iframe {
           box-shadow: 0 0 .5em 0 rgba(0,0,0,.4);
