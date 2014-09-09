@@ -17,13 +17,19 @@ section.contact {
     }
     .right {
       float: left;
-      width: 19em;
-      margin-left: 2em;
+      width: 19.5em;
+      margin-left: 1.5em;
       h4 {
         width: 13em;
       }
-      p:first-of-type {
-        border-top: 2px solid #e0e0da;
+      p {
+        padding-left: 4.6em;
+        padding-right: 0;
+        &:first-of-type {
+          border-top: 2px solid #e0e0da;
+          background: image-url('paper-airplane.png') 0 .5em no-repeat;
+          padding-top: 1.3em;
+        }
       }
     }
   }
@@ -48,18 +54,29 @@ section.contact {
     display: block;
     margin: .6em 0;
   }
-  address {
-    border-top: 2px solid #e0e0da;
-    text-align: left;
+  .pages .content & p {
     font-family: 'jaf-bernino-sans-condensed', sans-serif;
     font-style: normal;
     letter-spacing: .1em;
     color: #8c8c8a;
+    font-size: .85em;
+    line-height: 1.5;
+  }
+  address {
+    font-family: 'jaf-bernino-sans-condensed', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    letter-spacing: .1em;
+    color: #8c8c8a;
+    font-size: .85em;
+    line-height: 1.5;
+    border-top: 2px solid #e0e0da;
+    text-align: left;
     background: image-url('world.png') 0 .5em no-repeat;
     margin: 0;
     padding: 1.3em 0 0 4.5em;
-    font-size: .85em;
   }
+
   ul.contact-social {
     display: block;
     overflow: hidden;
