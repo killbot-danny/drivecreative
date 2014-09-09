@@ -290,11 +290,34 @@ section.portfolio {
       .direct-mail {
         width: 10em;
       }
+      .event-background {
+        width: 9.7em;
+      }
+      .event-background-image {
+        margin-top: 1em;
+        width: 29em;
+        img {
+          width: 100%
+        }
+      }
+      .video-script-image {
+        margin-top: .5em;
+        margin-bottom: 1em;
+      }
+      .video-script {
+        width: 10em
+      }
+      .lights-camera-speedo {
+        width: 12em;
+      }
     }
     &.nerd-deck {
       margin-top: 2em;
     }
     &.navex-global {
+      margin-top: 2em;
+    }
+    &.montage {
       margin-top: 2em;
     }
   }
