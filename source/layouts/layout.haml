@@ -87,7 +87,15 @@
           },
           closeOverlay = function() {
             classie.add( overlay, 'hide' );
+            localStorage.setItem('control_info_viewed', true);
           };
+
+
+        // Check to see if the overlay should be displayed at all.
+
+        if ( Modernizr.localstorage && !localStorage.getItem('control_info_viewed') ) {
+          $('#overlay').addClass('show');
+        }
 
         // toggle between fullscreen and small slideshow
         switchBtnn.addEventListener( 'click', toggleSlideshow );

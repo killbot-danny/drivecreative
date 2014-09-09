@@ -71,6 +71,10 @@ a:hover, a:focus {
 	height: 100%;
 	background-color: rgba(40,49,56,0.95);
 	z-index: 10000;
+	display: none;
+	&.show {
+		display: block;
+	}
 }
 
 .no-js .overlay,
