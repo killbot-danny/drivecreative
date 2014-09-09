@@ -115,7 +115,7 @@ section.portfolio {
       overflow: hidden;
       margin: 1em auto;
       border-bottom: 2px solid #f1f1ec;
-      &.results {
+      &:last-of-type {
         border-bottom: 0;
       }
       h6 {
@@ -237,6 +237,14 @@ section.portfolio {
             margin-right: 1em;
           }
         }
+        &.nerd-deck {
+          h6 {
+            margin-left: 1em;
+          }
+          img {
+            box-shadow: none;
+          }
+        }
       }
       .collateral {
         width: 10.25em;
@@ -249,24 +257,35 @@ section.portfolio {
         margin-top: 1em;
       }
     }
+    &.nerd-deck {
+      margin-top: 2em;
+    }
   }
   .sample-dark-wrapper {
     background-color: #f1f1ec;
     overflow: hidden;
     .sample {
       .title {
-        border-bottom: 2px solid #e9e9e5;
+        border-bottom: 2px solid #d8d8d4;
         h6 {
-          border-bottom: 2px solid #e9e9e5;
+          border-bottom: 2px solid #d8d8d4;
         }
       }
       .segment {
-        border-bottom: 2px solid #e9e9e5;
+        border-bottom: 2px solid #d8d8d4;
+        &:last-of-type {
+          border-bottom: 0;
+        }
         h6 {
-          border-bottom: 2px solid #e9e9e5;
+          border-bottom: 2px solid #d8d8d4;
         }
         ul.border-colors {
-          border-top: 2px solid #e9e9e5;;
+          border-top: 2px solid #d8d8d4;;
+        }
+        .business-card {
+          h6 {
+            border-bottom: 0;
+          }
         }
       }
     }
