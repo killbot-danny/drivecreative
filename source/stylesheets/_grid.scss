@@ -50,9 +50,10 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 300;
-  font-size: 130%;
+  font-size: .9em;
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  line-height: 1.9;
 }
 
 .grid figcaption h4 {
