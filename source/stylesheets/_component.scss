@@ -372,6 +372,7 @@ button.content-switch::before {
 
 .pages .content.show {
 	height: auto;
+	min-height: 100%;
 	-webkit-transition: none;
 	transition: none;
 }
@@ -400,15 +401,6 @@ button.content-switch::before {
 	font-family: "jaf-bernino-sans-condensed",sans-serif;
 	font-style: normal;
 	font-weight: 300;
-}
-
-.pages .content p:last-child {
-	padding: 5em 1em 8em;
-	text-align: center;
-	font-family: "jaf-bernino-sans-condensed",sans-serif;
-	font-weight: bold;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
 }
 
 .js .pages .content h2,
