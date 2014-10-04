@@ -44,7 +44,7 @@
           %img{src: 'images/4_Image-contact_CCv02.jpg', alt: 'img4'}
         %h2
           contact
-          %span Heated conversations in the back yard
+          %span We listen. We talk. We have fun.
         %button.content-switch Read more
 
 
@@ -275,34 +275,33 @@
             %h6 We Also Hang Out At:
             %ul
               %li= link_to 'Vimeo', 'http://vimeo.com/user12111010/videos', class: 'vimeo'
-              %li= link_to 'Facebook', 'http://facebook.com', class: 'facebook'
-              %li= link_to 'Twitter', 'http://twitter.com', class: 'twitter'
-              %li= link_to 'LinkedIn', 'http://linkedin.com', class: 'linkedin'
+              %li= link_to 'Facebook', 'https://www.facebook.com/drivemg', class: 'facebook'
+              %li= link_to 'Twitter', 'https://twitter.com/DriveMG', class: 'twitter'
+              %li= link_to 'LinkedIn', 'https://www.linkedin.com/company/1945597', class: 'linkedin'
 
     .content{:'data-content' => 'content-4'}
       %section.contact
         %h2 contact
-
-        %h3.header Call us maybe? (yes) / no  XOXO
 
         .copy
 
           .left
             %h4 Please, Feel Free to Stalk Us.
             %address
-              DRIVE Marketing Group<br />
-              2626 SW Corbett Ave, Ste 200<br />
-              Portland, OR 97201<br />
+              %a{href: 'https://goo.gl/maps/EPkOn'}
+                DRIVE Marketing Group<br />
+                2626 SW Corbett Ave, Ste 200<br />
+                Portland, OR 97201<br />
               <br />
               503.303.8499<br />
-              <a href="mailto:workwithus@drivemg.com">workwithus@drivemg.com</a>
+              %a{href: 'mailto:workwithus@drivemg.com'} workwithus@drivemg.com
 
             %h4 We Also Hang Out At:
             %ul.contact-social
               %li= link_to 'Vimeo', 'http://vimeo.com/user12111010/videos', class: 'vimeo'
-              %li= link_to 'Facebook', 'http://facebook.com', class: 'facebook'
-              %li= link_to 'Twitter', 'http://twitter.com', class: 'twitter'
-              %li= link_to 'LinkedIn', 'http://linkedin.com', class: 'linkedin'
+              %li= link_to 'Facebook', 'https://www.facebook.com/drivemg', class: 'facebook'
+              %li= link_to 'Twitter', 'https://twitter.com/DriveMG', class: 'twitter'
+              %li= link_to 'LinkedIn', 'https://www.linkedin.com/company/1945597', class: 'linkedin'
 
           .right
             %h4 And Here's Your Chance...
@@ -310,3 +309,5 @@
             %p Submit your resume and/or portfolio to: <a href="mailto:workwithus@drivemg.com">workwithus@drivemg.com</a>
 
             = image_tag('deer.png')
+
+        %h3.header Call us maybe? (yes) / no  XOXO
