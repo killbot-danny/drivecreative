@@ -18,6 +18,9 @@ section.portfolio {
       text-transform: uppercase;
       text-align: left;
       margin: .75em 0;
+      &:first-of-type {
+        text-align: center;
+      }
     }
     ul {
       display: block;
@@ -114,7 +117,6 @@ section.portfolio {
     .segment {
       overflow: hidden;
       margin: 1em auto;
-      border-bottom: 2px solid #f1f1ec;
       &:last-of-type {
         border-bottom: 0;
       }
@@ -232,7 +234,7 @@ section.portfolio {
           border-bottom: 0;
         }
         img {
-          box-shadow: 0 0 .5em 0 rgba(0,0,0,.4);
+          box-shadow: 0 0 .3em 0 rgba(0,0,0,.4);
           &:first-of-type {
             margin-right: 1em;
           }
