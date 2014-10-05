@@ -114,19 +114,21 @@
 
           .segment
             .left
-              = image_tag('casestudy-1-screen.png')
+              %h6.mobile Website / Photography
+              = image_tag 'casestudy-1-screen.png', class: 'mobile-fullsize'
             .right.website-photography
               %h6 Website / Photography
               %p After touring the facility, our team had the same reaction; “this place is so clean”. And our theme for the website was born. Shooting new photos of the facility allowed us to use minimal copy and leverage the new imagery to display the capabilities. Our favorite three C’s: clean, crisp, concise.
 
           .segment
             .left.video
-              %h6 Video
+              %h6.mobile Video
               %p This client had an amazing story to tell. Our goal throughout this piece was to capture the innovative knowledge, technologies and capabilities within the company, but more importantly, we wanted to focus on the people of Vision Plastics. It was, after all, the people that made this company unique from the competition and who could genuinely tell the story of their new tagline, “Imagine More.”
               %p It was a thrill to see the excitement on their faces when we showed up on the day of the video shoot with an 8-person crew toting two truckloads worth of video gear. The making-of the video was truly an endeavor built upon teamwork; we were lucky to be working with such an incredible group of people at Vision Plastics. As for the few camera-shy folks, they found other ways to help out behind the scenes (as well as some pretty amazing hiding places) while the camera was rolling.
 
             .right.video-player.vision-plastics
-              %iframe{src: '//player.vimeo.com/video/86566810', width: '595', height: '334', frameborder: '0', webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
+              .full-width-video
+                %iframe{src: '//player.vimeo.com/video/86566810', width: '595', height: '334', frameborder: '0', webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
               %ul
                 %li= image_tag('casestudy-1-video-clip-a.jpg')
                 %li= image_tag('casestudy-1-video-clip-b.jpg')
@@ -134,7 +136,7 @@
 
           .segment
             .left.business-card
-              %h6 Business Card
+              %h6.mobile Business Card
               = image_tag('casestudy-1-card-a.jpg')
               = image_tag('casestudy-1-card-b.jpg')
             .right.collateral
@@ -143,13 +145,13 @@
 
           .segment.results
             .left
-              %h6 Results
+              %h6.mobile Results
               %p A little face-lift never hurt anyone, right? In this case, it allowed Vision Plastics to become more competitive in the international and national space. Their new brand not only put a welcoming face to their name, it ultimately gave them the freedom to work with their ideal clients, providing long term successes and building lasting relationships.
 
         .sample-dark-wrapper
           .sample.nerd-deck
             .title
-              %h6 Nerd Deck
+              %h6.mobile Nerd Deck
               %p Don’t be fooled by the name. This company needed to educate the market on their new technology service in a non-nerdy way.
 
             .segment
@@ -161,7 +163,7 @@
                   %li.green
                   %li.light-grey
               .right.nd-logo
-                = image_tag('casestudy-2-logo.png')
+                = image_tag 'casestudy-2-logo.png', class: 'mobile-fullsize'
 
             .segment
               .left.website-image
