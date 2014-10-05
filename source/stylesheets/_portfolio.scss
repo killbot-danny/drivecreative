@@ -253,6 +253,9 @@ section.portfolio {
           @include mobile {
             border-bottom: 0;
             text-align: center;
+            position: relative;
+            top: 1.75em;
+            margin-top: -1em;
           }
         }
         & p {
@@ -370,10 +373,26 @@ section.portfolio {
       }
       .nd-logo {
         margin-top: .25em;
+        .mobile-fullsize {
+          @include mobile {
+            width: 80%;
+          }
+        }
+      }
+      .website-image {
+        .mobile-fullsize {
+          @include mobile {
+            -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+          }
+        }
       }
       .website {
         width: 10em;
         margin-top: 1em;
+        @include mobile {
+          display: none;
+        }
       }
       .campaign-theme {
         width: 10em;
