@@ -156,7 +156,7 @@
 
             .segment
               .left.branding
-                %h6.mobile Branding
+                %h6.nd-logo.mobile Branding
                 %p As a new company, NerdDeck started with a clean slate. Their brand needed to portray that they were cutting edge, just like their new technology service. Bright colors matched with a sleek logo definitely set them apart from the competition.
                 %ul.color-blocks
                   %li.dark-grey
@@ -174,10 +174,11 @@
 
             .segment
               .left.video.nerd-deck
-                %h6 Video
+                %h6.mobile Video
                 %p Have you ever watched a video on a technology service? We know, they can be boring. Our challenge was to educate and inform an audience about a new technology service in a fun way that would capture their attention to the fullest. We met with the client extensively to ensure we were properly deciphering the technical speak. From there we developed a script and storyboards laced with puns to simplify the tech talk and spice up the flavor. Our animator got to work creating adorable characters to act out the bizarre scenarios to engage the viewer while stealthily informing them of the technology our client had to offer.
               .right.video-player.nerd-deck
-                %iframe{src: '//player.vimeo.com/video/70352286', width: '595', height: '334', frameborder: '0', webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
+                .full-width-video
+                  %iframe{src: '//player.vimeo.com/video/70352286', width: '595', height: '334', frameborder: '0', webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
                 %ul
                   %li= image_tag('casestudy-2-video-clip-a.jpg')
                   %li= image_tag('casestudy-2-video-clip-b.jpg')
@@ -185,7 +186,7 @@
 
             .segment
               .left.business-card.nerd-deck
-                %h6 Business Card
+                %h6.mobile Business Card
                 = image_tag('casestudy-2-card-aa.png')
                 = image_tag('casestudy-2-card-bb.png')
               .right.collateral
@@ -202,6 +203,7 @@
               %p The duration of this campaign was over the span of a few months and we wanted participants to realize learning and utilizing this new product was a journey. Navigating through a trail with some amazing prizes to keep pushing you along the way.
 
             .right.campaign-image
+              %h6.mobile-only Direct Mail
               = image_tag('casestudy-3-hero.jpg')
 
           .segment
@@ -218,7 +220,7 @@
               %h6 Direct Mail
               %p Acting as a pattern interruption piece, a printed campaign trail map was included in a survival kit to be mailed to participants kicking off the campaign and building interest. The survival kit included some fun hiking necessities along with the campaign outline to educate participants on next steps.
 
-          .segment
+          .segment.no-mobile
             .left.engagement
               %h6 Engagement
               %p Within the first phase of the campaign we created a series of quizzes to ensure a high level of participant interaction. Upon completion of the quizzes, participants were rewarded with a prize relevant to the campaign theme. The following two phases included a digital trail map with instructions on next steps. Each phase provided the participant to receive a prize, yielding high response rates. This educational campaign provided both knowledge on the new program and increased comfort levels, allowing the sales team to build the pipeline with prospects.
@@ -229,7 +231,7 @@
               %h6 We’re gonna need a montage
               %p When a high tech company announces a new General Manager, you can bet it won’t be in an ordinary way.
 
-            .segment
+            .segment.no-mobile
               .left.event-background
                 %h6 Event background
                 %p Our client was hosting a large tech conference in Las Vegas, packed with new products and big announcements. The current General Manager would be retiring and we needed to announce the predecessor in a fun way that left employees with a positive image.
@@ -239,6 +241,7 @@
 
             .segment
               .left.video-script-image
+                %h6.mobile-only Video Script
                 = image_tag('casestudy-4-img-a.jpg')
               .right.video-script
                 %h6 Video Script
@@ -251,13 +254,15 @@
                 %p This was an ambitious video shoot: One day and over 20 scenes. We assembled a crew of 18+ people and a few extras (including one butt-double for the speedo scene) to take over an exercise facility and create a mock Rocky montage. The new GM-to-be was pummeled with a swarm of tennis balls, tied to golf carts, drenched in water, and through it all he laughed it off and asked for more. Talk about a good sport!
 
               .right.video-player.lights-camera
-                %iframe{src: '//player.vimeo.com/video/103379661', width: '595', height: '334', frameborder: '0', webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
+                %h6 Video
+                .full-width-video
+                  %iframe{src: '//player.vimeo.com/video/103379661', width: '595', height: '334', frameborder: '0', webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
                 %ul
                   %li= image_tag('casestudy-4-video-clip-a.jpg')
                   %li= image_tag('casestudy-4-video-clip-b.jpg')
                   %li= image_tag('casestudy-4-video-clip-c.jpg')
 
-            .segment
+            .segment.no-mobile
               .left.show-time-image
                 = image_tag('casestudy-4-gif-placeholder.jpg')
 

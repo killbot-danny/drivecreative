@@ -1,3 +1,15 @@
+@mixin mobile-headline {
+  display: block;
+  border-bottom: none;
+  text-align: center;
+}
+
+.no-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
 section.portfolio {
   .full-width-video {
     width: auto;
@@ -167,16 +179,15 @@ section.portfolio {
         letter-spacing: 1px;
         border-bottom: 2px solid #f1f1ec;
         margin: 1em 0 .5em;
-        &.no-mobile {
-          @include mobile {
-            display: none;
-          }
-        }
         &.mobile {
           @include mobile {
-            display: block;
-            border-bottom: none;
-            text-align: center;
+            @include mobile-headline;
+          }
+        }
+        &.mobile-only {
+          display: none;
+          @include mobile {
+            @include mobile-headline;
           }
         }
       }
@@ -238,6 +249,9 @@ section.portfolio {
         float: right;
         h6 {
           text-align: right;
+          @include mobile {
+            text-align: center;
+          }
         }
         p {
           text-align: right;
@@ -253,9 +267,13 @@ section.portfolio {
           @include mobile {
             border-bottom: 0;
             text-align: center;
-            position: relative;
-            top: 1.75em;
-            margin-top: -1em;
+          }
+          &.nd-logo {
+            @include mobile {
+              position: relative;
+              top: 1.75em;
+              margin-top: -1em;
+            }
           }
         }
         & p {
@@ -291,6 +309,9 @@ section.portfolio {
         &.nerd-deck {
           margin-top: .5em;
           width: 11em;
+          @include mobile {
+            width: auto;
+          }
         }
         p {
           @include mobile {
@@ -396,12 +417,21 @@ section.portfolio {
       }
       .campaign-theme {
         width: 10em;
+        @include mobile {
+          display: none;
+        }
       }
       .campaign-image {
-        width: 29em;
+        width: auto;
+        max-width: 29em;
         margin-top: .8em;
         img {
           width: 100%
+        }
+        h6 {
+          @include mobile {
+            font-size: .8em;
+          }
         }
       }
       .direct-mail-images {
@@ -413,23 +443,47 @@ section.portfolio {
           li {
             display: block;
             float: left;
+            @include mobile {
+              float: none;
+            }
             &:first-of-type {
               margin-right: 1em;
+              @include mobile {
+                margin-right: 0;
+              }
             }
             h6 {
               border-bottom: 0;
+              @include mobile {
+                margin: 1em;
+                font-size: .8em;
+              }
             }
             img {
               box-shadow: 0 0 .5em 0 rgba(0,0,0,.4);
+              @include mobile {
+                width: 90vw;
+                max-width: 330px;
+                display: block;
+                margin: 0 auto;
+              }
             }
           }
         }
+        h6 {
+          font-size: .8em;
+        }
       }
       .direct-mail {
-        width: 10em;
+        @include mobile {
+          display: none;
+        }
       }
       .event-background {
         width: 9.7em;
+        @include mobile {
+          display: none;
+        }
       }
       .event-background-image {
         margin-top: 1em;
@@ -437,16 +491,42 @@ section.portfolio {
         img {
           width: 100%
         }
+        @include mobile {
+          display: none;
+        }
       }
       .video-script-image {
         margin-top: .5em;
         margin-bottom: 1em;
+        img {
+          @include mobile {
+            width: 100%;
+          }
+        }
+        @include mobile {
+          margin: .5em 1em 1em;
+        }
       }
       .video-script {
-        width: 10em
+        width: 10em;
+        @include mobile {
+          display: none;
+        }
       }
       .lights-camera-speedo {
         width: 12em;
+        @include mobile {
+          display: none;
+        }
+      }
+      .lights-camera {
+        .full-width-video {
+          @include mobile {
+            width: 100%;
+            max-width: 595px;
+            max-height: 334px;
+          }
+        }
       }
       .show-time-image {
         img {
@@ -477,13 +557,40 @@ section.portfolio {
     }
     &.navex-global {
       margin-top: 2em;
+      .title {
+        h6 {
+          @include mobile {
+            margin-top: 2.5em;
+          }
+        }
+      }
     }
     &.montage {
       margin-top: 2em;
+      @include mobile {
+        padding-bottom: 2em;
+      }
+      .segment {
+        @include mobile {
+          margin: 0;
+        }
+      }
+      .title {
+        h6 {
+          @include mobile {
+            font-size: .75em;
+          }
+        }
+      }
     }
     &.stalk-us {
       margin-top: 3em;
       margin-bottom: 3em;
+      h6 {
+        @include mobile {
+          font-size: 1em;
+        }
+      }
     }
   }
   .sample-dark-wrapper {
@@ -523,12 +630,25 @@ section.portfolio {
           h6 {
             border-bottom: 0;
           }
+          img {
+            @include mobile {
+              width: 272px;
+            }
+            &:first-of-type {
+              @include mobile {
+                transform: translateX(2px);
+              }
+            }
+          }
         }
       }
     }
   }
   .portfolio-social {
     line-height: 7;
+    @include mobile {
+      padding-top: 2em;
+    }
     h6 {
       font-family: 'Halogen', sans-serif;
       font-size: .85em;
@@ -539,6 +659,11 @@ section.portfolio {
       vertical-align: middle;
       font-weight: lighter;
       letter-spacing: 1px;
+      @include mobile {
+        vertical-align: top;
+        display: block;
+        line-height: 1;
+      }
     }
     ul {
       display: inline-block;
