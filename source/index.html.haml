@@ -34,7 +34,7 @@
       .slide{:'data-content' => 'content-3'}
         .img-wrap
           %img{src: 'images/3_Image-portfolio_CCv02.jpg', alt: 'img3'}
-        %h2
+        %h2.portfolio
           portfolio
           %span We brand. We design. We animate.
         %button.content-switch Read more
@@ -42,7 +42,7 @@
       .slide{:'data-content' => 'content-4'}
         .img-wrap
           %img{src: 'images/4_Image-contact_CCv02.jpg', alt: 'img4'}
-        %h2
+        %h2.contact
           contact
           %span We listen. We talk. We have fun.
         %button.content-switch Read more
@@ -75,7 +75,7 @@
 
     .content{:'data-content' => 'content-3'}
       %section.portfolio
-        %h2 portfolio
+        %h2.portfolio portfolio
 
         .case-studies
           %h4 Drive Case Studies
@@ -280,7 +280,7 @@
               %li= link_to 'LinkedIn', 'https://www.linkedin.com/company/1945597', class: 'linkedin'
 
     .content{:'data-content' => 'content-4'}
-      %section.contact
+      %section
         %h2 contact
 
         .copy

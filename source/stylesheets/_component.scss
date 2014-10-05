@@ -472,12 +472,24 @@ button.content-switch::before {
 @media screen and (max-width: 63.125em) {
 	.dragslider h2 {
 		font-size: 2.8em;
+		&.portfolio {
+			// Optimized for the iPhone 5, should be updated when the iPhone 6 device size
+			// has gotten more market
+			font-size: 1.8em;
+		}
+		&.contact {
+			font-size: 2.15em;
+		}
 	}
 	.pages .content {
 		font-size: 100%;
 	}
 	.pages .content h2 {
 		font-size: 3em;
+		&.portfolio {
+			font-size: 1.7em;
+			padding-top: 5em;
+		}
 	}
 }
 

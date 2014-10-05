@@ -2,6 +2,9 @@ section.portfolio {
   .full-width-video {
     width: auto;
   }
+  h2 {
+    font-size: 1.95em;
+  }
   h3 {
     font-family: 'halogen', sans-serif;
     font-weight: normal;
@@ -27,6 +30,10 @@ section.portfolio {
       margin: 0;
       padding: 0;
       overflow: hidden;
+      @include mobile {
+        width: 93vw;
+        margin: 0 auto;
+      }
       li {
         display: block;
         float: left;
@@ -42,6 +49,15 @@ section.portfolio {
           text-indent: 100%;
           white-space: nowrap;
           overflow: hidden;
+          @include mobile {
+            width: 45vw;
+            height: 45vw;
+          }
+        }
+        &:nth-child(even) {
+          @include mobile {
+            margin-right: 0;
+          }
         }
         &.link-1 {
           a {
@@ -101,6 +117,11 @@ section.portfolio {
         border-bottom: 2px solid #f1f1ec;
         padding-bottom: .1em;
         margin: 1em 0 .5em;
+        @include mobile {
+          font-size: 1.15em;
+          border-bottom: 0;
+          text-align: center;
+        }
       }
       p {
         color: #4a4a4a;
@@ -112,6 +133,12 @@ section.portfolio {
         padding: 0;
         text-transform: none;
         letter-spacing: 1px;
+        @include mobile {
+          display: none;
+        }
+      }
+      @include mobile {
+        border-bottom: 0;
       }
     }
     .segment {
@@ -147,6 +174,9 @@ section.portfolio {
         margin: 1em 0 0;
         padding: .8em 0 0;
         border-top: 2px solid #f1f1ec;
+        @include mobile {
+          display: none;
+        }
         li {
           display: block;
           float: left;
@@ -178,6 +208,9 @@ section.portfolio {
       }
       .left {
         float: left;
+        @include mobile {
+          float: none;
+        }
       }
       .right {
         float: right;
@@ -191,9 +224,32 @@ section.portfolio {
       .branding {
         width: 11em;
         margin-bottom: 2.5em;
+        & h6 {
+          @include mobile {
+            border-bottom: 0;
+            text-align: center;
+          }
+        }
+        & p {
+          @include mobile {
+            display: none;
+          }
+        }
+        @include mobile {
+          width: auto;
+          margin-bottom: 0;
+        }
       }
       .branding-logo {
         margin-top: 1.3em;
+        & img {
+          @include mobile {
+            width: 100%;
+          }
+        }
+        @include mobile {
+          margin-top: 0;
+        }
       }
       .website-photography {
         margin-top: .75em;
