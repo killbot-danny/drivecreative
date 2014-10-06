@@ -1,0 +1,16 @@
+// For the initial banner, needs a little help
+.js .img-dragger-large .slide h2.home {
+  @include mobile {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.pages .content section.home {
+  h2 {
+    @include mobile {
+      margin: .4em .25em .1em;
+      max-width: 100%;
+    }
+  }
+}
