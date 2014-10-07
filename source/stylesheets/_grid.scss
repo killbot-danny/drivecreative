@@ -137,6 +137,48 @@
   transform: translateY(-50%) translateX(-50%) scale(1);
 }
 
+
+
+// Override defaults for these elements in mobile state so these are visible
+@media only screen and (max-width: 63.125em) {
+  .grid a figure img {
+    opacity: 1;
+  }
+
+  .grid a figcaption h3,
+  .grid a figcaption h4 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .grid a figcaption h4 {
+    opacity: 0;
+  }
+
+  .grid figure span.button {
+    top: 50%;
+    left: 50%;
+    border: 3px solid #fff;
+    background: transparent;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+    transform: translateY(-50%) translateX(-50%) scale(0.25);
+  }
+
+  .grid a figure span.button {
+    opacity: 1;
+    -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+    transform: translateY(-50%) translateX(-50%) scale(1);
+  }
+
+  .grid figure svg {
+    background: #fff;
+    height: 3.2em;
+  }
+}
+
+
 /* Media Queries */
 /* Let's redefine the width of each anchor and the margins */
 
