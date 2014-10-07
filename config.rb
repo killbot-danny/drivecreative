@@ -43,7 +43,9 @@ end
 # Methods defined in the helpers block are available in templates
 helpers do
   def person(options)
-    haml_tag :a, href: "mailto:#{options[:email]}", :'data-path-hover' => 'm 180,34.57627 -180,0 L 0,0 180,0 z' do
+    data_path = options[:double_line] ? 'm 180,56 -180,0 L 0,0 180,0 z' : 'm 180,34.57627 -180,0 L 0,0 180,0 z'
+
+    haml_tag :a, href: "mailto:#{options[:email]}", :'data-path-hover' => data_path do
       haml_tag :figure do
         haml_tag :img, src: options[:image]
         haml_tag :svg, viewBox: '0 0 180 320', preserveAspectRatio: 'none' do
